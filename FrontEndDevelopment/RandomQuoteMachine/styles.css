@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500');
+
+:root {
+    --theme-color: #16a085
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+#random-quote-machine {
+    height: 100vh;
+    background-color: var(--theme-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 1s;
+}
+
+#quote-box {
+    width: 450px;
+    padding: 40px 50px;
+    color: var(--theme-color);
+    background-color: white;
+    border-radius: 3px;
+}
+
+#text {
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    transition: color 1s;
+    transition: color 1s, opacity 500ms;
+}
+
+#author {
+    margin-top: 30px;
+    text-align: end;
+    transition: color 1s, opacity 500ms;
+}
+
+#buttons {
+    margin-top: 35px;
+}
+
+.quote-button {
+    color: white;
+    background-color: var(--theme-color);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+.quote-button:hover {
+    opacity: 0.9;
+}
+
+.font-awesome {
+    float: left;
+    font-size: 20px;
+    font-weight: 500;
+    width: 40px;
+    padding: 5px 0;
+    text-align: center;
+    margin-right: 5px;
+}
+
+#new-quote {
+    font-size: 15px;
+    float: right;
+    width: 100px;
+    padding: 8px 0;
+}
+
+#app-author {
+    margin-top: 15px;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+}
+
+@keyframes opacity-go-zero-back {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
