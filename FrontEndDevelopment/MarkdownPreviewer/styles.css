@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+        'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+        'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    line-height: 1.5;
+    background-color: #87b5b5;
+    padding: 10px;
+}
+
+#markdown-previewer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap {
+    margin: 10px;
+    background-color: #c0d8d8;
+    border: 1px solid black;
+    box-shadow: 1px 1px 10px 2px #3a5f5f;
+}
+
+.wrap.none {
+    display: none;
+}
+
+.header {
+    height: 35px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    background-color: #4aa3a3;
+    border-bottom: 1px solid black;
+    font-family: Russo One;
+}
+
+.maximize-button {
+    margin-left: auto;
+    font-size: 18px;
+    background-color: inherit;
+    border: none;
+}
+
+.maximize-button:hover {
+    color: #57e2b1;
+}
+
+#editor {
+    display: block;
+    resize: vertical;
+    padding: 5px;
+    width: 585px;
+    min-height: 190px;
+    background-color: inherit;
+    border: none;
+    outline: none;
+}
+
+#preview {
+    padding: 15px;
+    width: 770px;
+    min-height: 135px;
+}
+
+.wrap.maximize #editor,
+.wrap.maximize #preview {
+    min-height: calc(100vh - 100px);
+}
+
+/*#preview内，markdown解析的内容*/
+#preview>* {
+    margin: 20px 0;
+}
+
+#preview h1 {
+    border-bottom: 2px solid #224b4b;
+}
+
+#preview h2 {
+    border-bottom: 1px solid #224b4b;
+}
+
+#preview code {
+    background-color: white;
+    padding: 5px 0;
+}
+
+#preview pre {
+    display: block;
+    padding: 5px 0;
+    background-color: white;
+}
+
+#preview blockquote {
+    margin-left: 25px;
+    padding-left: 5px;
+    border-left: 3px solid #224b4b;
+}
+
+#preview table {
+    border-collapse: collapse;
+}
+
+#preview th,
+#preview td {
+    border: 2px solid #224b4b;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#preview ul,
+#preview ol {
+    margin-left: 25px;
+}
+
+#preview img {
+    display: block;
+    max-width: 90%;
+    margin: 0 auto;
+}
