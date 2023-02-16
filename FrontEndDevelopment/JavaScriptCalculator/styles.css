@@ -1,0 +1,111 @@
+@import 'https://fonts.googleapis.com/css?family=Share+Tech+Mono';
+
+@font-face {
+    font-family: 'Digital';
+    src: url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot');
+    src: url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot?#iefix') format('embedded-opentype'),
+        url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff2') format('woff2'),
+        url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff') format('woff'),
+        url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.ttf') format('truetype'),
+        url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.svg#Digital-7') format('svg');
+}
+
+* {
+    margin: 0;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    background-color: #c2c2d6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#expression,
+#display {
+    min-height: 30px;
+    width: 323px;
+    font-family: digital;
+    text-align: end;
+    word-wrap: break-word;
+}
+
+#expression {
+    color: #ffa500;
+    font-size: 20px;
+}
+
+#display {
+    color: white;
+    font-size: 28px;
+}
+
+.calculator {
+    padding: 5px;
+    background-color: black;
+    border: 2px solid #474768;
+}
+
+footer {
+    margin-top: 20px;
+    font-family: Share Tech Mono, sans;
+    text-align: center;
+}
+
+.pads {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(5, 65px);
+    gap: 1px;
+}
+
+.pad {
+    border: none;
+    color: white;
+    font-family: Share Tech Mono, monospace;
+    font-size: 20px;
+}
+
+.pad:hover {
+    border: 1px solid #808080;
+    color: black;
+    transform: scale(1.04);
+}
+
+/* 按键颜色 */
+.num {
+    background-color: #4d4d4d;
+}
+
+.operator {
+    background-color: #666666;
+}
+
+.clear {
+    background-color: #ac3939;
+}
+
+.equals {
+    background-color: #004466;
+}
+
+/* 按键位置布局 */
+#clear {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#zero {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#equals {
+    grid-row-start: 4;
+    grid-row-end: 6;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
