@@ -1,0 +1,40 @@
+h1 {
+    font-size: 50px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+h1~p {
+    text-align: center;
+}
+
+.app {
+    margin: 0 auto;
+    width: 960px;
+    height: 600px;
+}
+
+.states {
+    fill: none;
+    stroke: white;
+    stroke-linejoin: round;
+}
+
+#tooltip {
+    padding: 10px;
+    font-size: 10px;
+    background: #ffffcc;
+    opacity: 0.9;
+    position: absolute;
+    border-radius: 4px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
+    pointer-events: none;
+}
+
+footer {
+    text-align: end;
+}
+
+footer a {
+    text-decoration: none;
+}

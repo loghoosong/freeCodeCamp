@@ -1,0 +1,29 @@
+#container {
+    position: relative;
+    min-width: 100vw;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 500;
+}
+
+h1~p {
+    text-align: center;
+}
+
+.cell:hover {
+    box-sizing: border-box;
+    stroke: black;
+}
+
+#tooltip {
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+    background: #222222;
+    position: absolute;
+    display: inline-block;
+    border-radius: 8px;
+    pointer-events: none;
+}

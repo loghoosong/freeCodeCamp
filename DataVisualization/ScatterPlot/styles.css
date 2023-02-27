@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+}
+
+#container {
+    position: relative;
+    min-width: 900px;
+    display: flex;
+    justify-content: center;
+}
+
+.app {
+    width: 900px;
+    margin: 35px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 500;
+}
+
+h1~p {
+    text-align: center;
+}
+
+.scatter {
+    width: 900px;
+    height: 540px;
+}
+
+#tooltip {
+    padding: 10px;
+    font-size: 12px;
+    position: absolute;
+    display: inline-block;
+    border-radius: 8px;
+    background: lightsteelblue;
+    pointer-events: none;
+}

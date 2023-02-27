@@ -1,0 +1,53 @@
+.app {
+    text-align: center;
+    margin: 0 auto;
+    width: 960px;
+    height: 600px;
+}
+
+.navli {
+    display: inline;
+    color: blue;
+    cursor: pointer;
+}
+
+.navli.active {
+    color: blueviolet;
+}
+
+.navli::before {
+    content: ' | ';
+}
+
+.navli:first-of-type::before {
+    content: '';
+}
+
+h1 {
+    font-size: 40px;
+    white-space: nowrap;
+    margin-bottom: 0;
+}
+
+h1~p {
+    margin: 10px;
+}
+
+.tile-text {
+    pointer-events: none;
+}
+
+#legend {
+    margin: 20px;
+}
+
+#tooltip {
+    padding: 10px;
+    font-size: 10px;
+    background: #ffffcc;
+    opacity: 0.9;
+    position: absolute;
+    border-radius: 4px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
+    pointer-events: none;
+}
